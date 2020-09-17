@@ -19,7 +19,7 @@ public class Heap {
         a[j] = t;
     }
     public static void sink(Comparable[] a, int i, int n){
-        Comparable temp = a[i]; // assign temp to a[i] as a temporary valuable
+        Comparable temp = a[i]; // assign the value of a[i] to temp as a temporary valuable
         for(int k =i*2+1; k < n; k = k*2+1){ //start from left child node, which is 2i+1
             if(k+1 < n && less(a[k], a[k+1])){
                 // if left child node less than right child node, k++ to point to right child node
@@ -35,7 +35,7 @@ public class Heap {
                 break;
             }
         }
-        a[i] = temp; // assign temp final position
+        a[i] = temp; // assign temp at final position to a[i]
     }
     private static void show(Comparable[] a){
         for (Comparable comparable : a) {
