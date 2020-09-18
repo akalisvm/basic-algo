@@ -26,7 +26,7 @@ public class Heap {
                 k++;
             }
             if(less(temp, a[k])){
-                // if child node larger than father node, assign child node to father node
+                // if child node larger than father node, assign father node to child node
                 // (exchange operation is not needed here)
                 a[i] = a[k];
                 i = k;
