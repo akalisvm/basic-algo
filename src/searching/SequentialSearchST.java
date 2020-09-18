@@ -55,10 +55,14 @@ public class SequentialSearchST<Key, Value> {
         }
         st.print();
         System.out.print("Enter a key：");
-        Character c = getKey().charAt(0);
-        if(st.get(c) != null) {
-            System.out.println("try to search: " + c + "\n"
-                    + c + " is at position " + st.get(c));
+        String key = getKey();
+        if(key.length() == 1) {
+            Character c = key.charAt(0);
+            if(st.get(c) != null) {
+                System.out.println("try to search: " + c + "\n"
+                        + c + " is at position " + st.get(c));
+            }
+            else { System.out.println("invalid input!"); }
         }
         else { System.out.println("invalid input!"); }
     }
