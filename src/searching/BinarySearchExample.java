@@ -7,7 +7,7 @@ import java.util.Scanner;
 // position count from 0
 public class BinarySearchExample {
     public static int binarySearchIter(int[] a, int key) {
-        int lo = 0, hi = a.length-1, mid = 0;
+        int lo = 0, hi = a.length-1, mid;
         while(lo < hi) {
             mid = lo + (hi - lo) / 2;
             if(key < a[mid]) hi = mid-1;
