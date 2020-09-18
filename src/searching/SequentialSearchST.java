@@ -60,6 +60,6 @@ public class SequentialSearchST<Key, Value> {
             System.out.println("try to search: " + c + "\n"
                     + c + " is at position " + st.get(c));
         }
-        else { System.out.println("invalid input!");}
+        else { System.out.println("invalid input!"); }
     }
 }
