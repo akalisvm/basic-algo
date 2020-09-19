@@ -1,6 +1,5 @@
 package searching;
 
-
 import java.util.Scanner;
 
 // Hash table ST based on linear probe

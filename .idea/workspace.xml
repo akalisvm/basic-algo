@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121612a8-a527-461d-a637-50b2074a06b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/searching/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/searching/LinearProbingHashST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/searching/RedBlackBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/searching/SeparateChainingHashST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/BinarySearchExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/BinarySearchExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/BinarySearchST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/BinarySearchST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/SequentialSearchST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/SequentialSearchST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/searching/BinarySearchExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/BinarySearchExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/searching/BinarySearchST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/BinarySearchST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/searching/SequentialSearchST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/SequentialSearchST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/LinearProbingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/LinearProbingHashST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/RedBlackBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/RedBlackBST.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +144,7 @@
       <workItem from="1600063673361" duration="2623000" />
       <workItem from="1600088678658" duration="47943000" />
       <workItem from="1600499423882" duration="12920000" />
-      <workItem from="1600536173825" duration="4580000" />
+      <workItem from="1600536173825" duration="4871000" />
     </task>
     <servers />
   </component>
