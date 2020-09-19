@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 // Binary search ST based on two sorted arrays
 // choose Iter as optimized option
-// position count from 0
+// position counts from 0
 public class BinarySearchST<Key extends Comparable<Key>, Value> {
     private Key[] keys;
     private Value[] vals;
@@ -67,7 +67,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
 
     public void print() {
         for(int i = 0; i < n; i++) {
-            System.out.println(keys[i] + ": " + vals[i]);
+            System.out.print(keys[i] + ": " + vals[i] + "\t");
         }
     }
 
@@ -83,7 +83,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
             st.put(str.charAt(i), i);
         }
         st.print();
-        System.out.print("Enter a key：");
+        System.out.print("\nEnter a key：");
         String key = getKey();
         if(key.length() == 1) {
             Character c = key.charAt(0);

@@ -3,7 +3,7 @@ package searching;
 import java.util.Scanner;
 
 // Sequential search ST based on an unsorted linked list
-// position count from 0
+// position counts from 0
 public class SequentialSearchST<Key, Value> {
     private Node first;
     private class Node {
@@ -38,7 +38,7 @@ public class SequentialSearchST<Key, Value> {
 
     public void print() {
         for(Node x = first; x != null; x = x.next) {
-            System.out.println(x.key + ": " + x.val);
+            System.out.print(x.key + ": " + x.val + "\t");
         }
     }
 
@@ -54,7 +54,7 @@ public class SequentialSearchST<Key, Value> {
             st.put(str.charAt(i), i);
         }
         st.print();
-        System.out.print("Enter a key：");
+        System.out.print("\nEnter a key：");
         String key = getKey();
         if(key.length() == 1) {
             Character c = key.charAt(0);

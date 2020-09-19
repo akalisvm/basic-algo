@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 // Binary search with both iter and recursion
-// position count from 0
+// position counts from 0
 public class BinarySearchExample {
     public static int binarySearchIter(int[] a, int key) {
         int lo = 0, hi = a.length-1, mid;
