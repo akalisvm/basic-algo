@@ -1,6 +1,5 @@
 package searching;
 
-
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -71,7 +70,6 @@ public class BST<Key extends Comparable<Key>, Value> {
         System.out.print(x.key + ": "+ x.val + "\t");
         inOrderTraversal(x.right);
     }
-
 
     // post order traversal LEFT -> RIGHT -> ROOT
     public void postOrderTraversal() { postOrderTraversal(root); }

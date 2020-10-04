@@ -12,6 +12,7 @@ public class MergeBU {
             }
         }
     }
+
     public static void merge(Comparable[] a, int lo, int mid, int hi){
         int i = lo, j = mid + 1;
         Comparable[] aux = new Comparable[a.length];
@@ -23,19 +24,23 @@ public class MergeBU {
             else a[k] = aux[i++];
         }
     }
+
     private static boolean less(Comparable v, Comparable w){ return v.compareTo(w) < 0; }
+
     private static void show(Comparable[] a){
         for (Comparable comparable : a) {
             System.out.print(comparable + " ");
         }
         System.out.println();
     }
+
     public static boolean isSorted(Comparable[] a){
         for(int i = 0; i < a.length; i++){
             if(less(a[i], a[i-1])) return false;
         }
         return true;
     }
+
     public static void main(String[] args){
         String[] a = new String[]{"S","O","R","T","E","X","A","M","P","L","E"};
         System.out.println("The array before sorting:");

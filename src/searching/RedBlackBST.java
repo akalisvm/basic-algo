@@ -11,7 +11,7 @@ import java.util.Scanner;
 // 2.No one node connects with two red links.
 // 3.This tree is perfectly balanced in black which means the number of black links on the path of any empty connection to the root node is same.
 // position counts from 0
-public class RedBlackBST<Key extends Comparable<Key>, Value> {
+public class  RedBlackBST<Key extends Comparable<Key>, Value> {
     private Node root;
     private static final boolean RED = true;
     private static final boolean BLACK = false;
@@ -124,7 +124,6 @@ public class RedBlackBST<Key extends Comparable<Key>, Value> {
         System.out.print(x.key + ": "+ x.val + "\t");
         inOrderTraversal(x.right);
     }
-
 
     // post order traversal LEFT -> RIGHT -> ROOT
     public void postOrderTraversal() { postOrderTraversal(root); }

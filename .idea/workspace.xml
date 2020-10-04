@@ -2,8 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121612a8-a527-461d-a637-50b2074a06b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/searching/LinearProbingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/LinearProbingHashST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/BreadthFirstPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/ConnectComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/Cycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/DepthFirstPaths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/DepthFirstSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/TwoColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/searching/SparseVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/BST$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/BST$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/BST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/BST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/LinearProbingHashST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/LinearProbingHashST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/RedBlackBST$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/RedBlackBST$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/RedBlackBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/RedBlackBST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/SequentialSearchST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/SequentialSearchST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Bubble.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Bubble.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Heap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Heap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Insertion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Insertion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/MaxPQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/MaxPQ.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/MergeBU.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/MergeBU.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/MergeUB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/MergeUB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Quick.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Quick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Quick3way.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Quick3way.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Selection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Selection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Shell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Shell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/SortCompare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/SortCompare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/BST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/searching/RedBlackBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/RedBlackBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/SequentialSearchST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/SequentialSearchST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Bubble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Bubble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Heap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Insertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Insertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/MaxPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/MaxPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/MergeBU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/MergeBU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/MergeUB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/MergeUB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Quick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Quick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Quick3way.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Quick3way.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Selection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Selection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Shell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Shell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/SortCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/SortCompare.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,13 +93,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LinearProbingHashST">
-    <configuration name="BST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="searching.BST" />
+  <component name="RunManager" selected="Application.TwoColor">
+    <configuration name="BreadthFirstPaths" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graph.BreadthFirstPaths" />
       <module name="sl_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="searching.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -69,12 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinearProbingHashST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="searching.LinearProbingHashST" />
+    <configuration name="ConnectComponent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graph.ConnectComponent" />
       <module name="sl_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="searching.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +120,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedBlackBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="searching.RedBlackBST" />
+    <configuration name="Cycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graph.Cycle" />
       <module name="sl_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="searching.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SeparateChainingHashST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="searching.SeparateChainingHashST" />
+    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graph.Graph" />
       <module name="sl_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="searching.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SequentialSearchST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="searching.SequentialSearchST" />
+    <configuration name="TwoColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graph.TwoColor" />
       <module name="sl_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="searching.*" />
+          <option name="PATTERN" value="graph.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LinearProbingHashST" />
-        <item itemvalue="Application.SeparateChainingHashST" />
-        <item itemvalue="Application.RedBlackBST" />
-        <item itemvalue="Application.BST" />
-        <item itemvalue="Application.SequentialSearchST" />
+        <item itemvalue="Application.TwoColor" />
+        <item itemvalue="Application.Cycle" />
+        <item itemvalue="Application.ConnectComponent" />
+        <item itemvalue="Application.Graph" />
+        <item itemvalue="Application.BreadthFirstPaths" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +182,18 @@
       <workItem from="1600063673361" duration="2623000" />
       <workItem from="1600088678658" duration="47943000" />
       <workItem from="1600499423882" duration="12920000" />
-      <workItem from="1600536173825" duration="4871000" />
+      <workItem from="1600536173825" duration="5914000" />
+      <workItem from="1600598843381" duration="1210000" />
+      <workItem from="1601212144770" duration="5076000" />
+      <workItem from="1601470982921" duration="10562000" />
+      <workItem from="1601481585334" duration="45000" />
+      <workItem from="1601566713077" duration="2457000" />
+      <workItem from="1601732234559" duration="8326000" />
+      <workItem from="1601833805728" duration="2271000" />
+      <workItem from="1601836146041" duration="713000" />
+      <workItem from="1601836895816" duration="4838000" />
+      <workItem from="1601841887944" duration="33000" />
+      <workItem from="1601842058125" duration="4344000" />
     </task>
     <servers />
   </component>
