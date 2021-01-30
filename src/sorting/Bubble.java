@@ -1,7 +1,7 @@
 package sorting;
 
 public class Bubble {
-    public static void sort(Comparable[] a){
+    public static void sort(Comparable[] a) {
         int n = a.length;
         for(int i = 0; i < n-1; i++){
             for(int j = 0; j < n-1; j++) {
@@ -16,16 +16,18 @@ public class Bubble {
         return v.compareTo(w) < 0;
     }
 
-    private static void exchange(Comparable[] a, int i, int j){ Comparable t = a[i]; a[i] = a[j]; a[j] = t; }
+    private static void exchange(Comparable[] a, int i, int j) {
+        Comparable t = a[i]; a[i] = a[j]; a[j] = t;
+    }
 
-    private static void show(Comparable[] a){
+    private static void show(Comparable[] a) {
         for (Comparable comparable : a) {
             System.out.print(comparable + " ");
         }
         System.out.println();
     }
 
-    public static boolean isSorted(Comparable[] a){
+    private static boolean isSorted(Comparable[] a) {
         for(int i = 0; i < a.length; i++){
             if(less(a[i], a[i-1])) return false;
         }

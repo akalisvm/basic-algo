@@ -10,9 +10,9 @@ public class LinearProbingHashST<Key, Value> {
     private Key[] keys;
     private Value[] vals;
 
-    public LinearProbingHashST() { this(16); }
+    private LinearProbingHashST() { this(16); }
 
-    public LinearProbingHashST(int m) {
+    private LinearProbingHashST(int m) {
         this.m = m;
         keys = (Key[]) new Object[m];
         vals = (Value[]) new Object[m];
@@ -30,7 +30,7 @@ public class LinearProbingHashST<Key, Value> {
         m = st.m;
     }
 
-    public void put(Key key, Value val) {
+    private void put(Key key, Value val) {
         if(n >= m/2) resize(2*m);
         int i;
         for(i = hash(key); keys[i] != null; i = (i+1) % m) {
@@ -41,14 +41,14 @@ public class LinearProbingHashST<Key, Value> {
         n++;
     }
 
-    public Value get(Key key) {
+    private Value get(Key key) {
         for(int i = hash(key); keys[i] != null; i = (i+1) % m) {
             if(keys[i].equals(key)) { return vals[i]; }
         }
         return null;
     }
 
-    public static String getKey() {
+    private static String getKey() {
         Scanner sc = new Scanner(System.in);
         return sc.next();
     }

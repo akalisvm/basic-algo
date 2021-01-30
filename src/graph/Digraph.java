@@ -7,7 +7,7 @@ public class Digraph {
     private int E;
     private LinkedList<Integer>[] adj;
 
-    public Digraph(int V) {
+    private Digraph(int V) {
         this.V = V;
         this.E = 0;
         adj = (LinkedList<Integer>[]) new LinkedList[V];
@@ -16,7 +16,7 @@ public class Digraph {
         }
     }
 
-    public Digraph(int[][] array) {
+    Digraph(int[][] array) {
         this(array[0][0]); // read V and initialize the graph
         int E = array[1][0]; // read E
         for(int i = 2; i < E+2; i++) {
@@ -30,7 +30,7 @@ public class Digraph {
 
     public int E() { return E; }
 
-    public void addEdge(int v, int w) {
+    private void addEdge(int v, int w) {
         adj[v].add(w);
         E++;
     }
@@ -59,7 +59,7 @@ public class Digraph {
         return String.valueOf(s);
     }
 
-    public static void graphPrint(int[][] digraph) {
+    private static void graphPrint(int[][] digraph) {
         Digraph G = new Digraph(digraph);
         System.out.print(G);
     }

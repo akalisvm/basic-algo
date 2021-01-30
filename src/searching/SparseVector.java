@@ -4,19 +4,19 @@ public class SparseVector {
     private int n;
     private SequentialSearchST<Integer, Double> st;
 
-    public SparseVector(int n) {
+    private SparseVector(int n) {
         this.n = n;
         st = new SequentialSearchST<>();
     }
 
-    public void put(int i, double x) { st.put(i, x); }
+    private void put(int i, double x) { st.put(i, x); }
 
     public double get(int i) {
         if (!st.contains(i)) return 0.0;
         else return st.get(i);
     }
 
-    public double dot(double[] x) {
+    private double dot(double[] x) {
         double sum = 0.0;
         for (int i = 0; i < n; i++) {
             if(st.get(i) != null){

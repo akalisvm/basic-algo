@@ -3,7 +3,7 @@ package sorting;
 public class MergeBU {
     //Merge Sorting from Bottom to Up
     private static Comparable[] aux;
-    public static void sort(Comparable[] a){
+    public static void sort(Comparable[] a) {
         int n = a.length;
         aux = new Comparable[n];
         for(int sz = 1; sz < n; sz = 2*sz) {
@@ -13,7 +13,7 @@ public class MergeBU {
         }
     }
 
-    public static void merge(Comparable[] a, int lo, int mid, int hi){
+    private static void merge(Comparable[] a, int lo, int mid, int hi) {
         int i = lo, j = mid + 1;
         Comparable[] aux = new Comparable[a.length];
         for(int k = lo; k <= hi; k++) aux[k] = a[k];
@@ -25,23 +25,25 @@ public class MergeBU {
         }
     }
 
-    private static boolean less(Comparable v, Comparable w){ return v.compareTo(w) < 0; }
+    private static boolean less(Comparable v, Comparable w){
+        return v.compareTo(w) < 0; }
 
-    private static void show(Comparable[] a){
+
+    private static void show(Comparable[] a) {
         for (Comparable comparable : a) {
             System.out.print(comparable + " ");
         }
         System.out.println();
     }
 
-    public static boolean isSorted(Comparable[] a){
-        for(int i = 0; i < a.length; i++){
+    private static boolean isSorted(Comparable[] a) {
+        for(int i = 0; i < a.length; i++) {
             if(less(a[i], a[i-1])) return false;
         }
         return true;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         String[] a = new String[]{"S","O","R","T","E","X","A","M","P","L","E"};
         System.out.println("The array before sorting:");
         show(a);

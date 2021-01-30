@@ -6,7 +6,7 @@ import java.util.Scanner;
 // Binary search with both iter and recursion
 // position counts from 0
 public class BinarySearchExample {
-    public static int binarySearchIter(int[] a, int key) {
+    private static int binarySearchIter(int[] a, int key) {
         int lo = 0, hi = a.length-1, mid;
         while(lo < hi) {
             mid = lo + (hi - lo) / 2;
@@ -17,11 +17,11 @@ public class BinarySearchExample {
         return -1;
     }
 
-    public static int binarySearchRecursion(int[] a, int key) {
+    private static int binarySearchRecursion(int[] a, int key) {
         return binarySearchRecursion(a, key, 0, a.length-1);
     }
 
-    public static int binarySearchRecursion(int[] a, int key, int lo, int hi) {
+    private static int binarySearchRecursion(int[] a, int key, int lo, int hi) {
         if(lo >= hi) return -1;
         int mid = lo + (hi - lo) / 2;
         if(key < a[mid]) return binarySearchRecursion(a, key, lo, mid-1);
@@ -36,7 +36,7 @@ public class BinarySearchExample {
         System.out.println();
     }
 
-    public static int getKey() {
+    private static int getKey() {
         Scanner sc = new Scanner(System.in);
         return sc.nextInt();
     }

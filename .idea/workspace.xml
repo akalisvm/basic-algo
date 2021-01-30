@@ -2,9 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121612a8-a527-461d-a637-50b2074a06b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/graph/Digraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/graph/DirectedDFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/graph/DirectedCycle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/string/MSD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/string/Quick3string.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/META-INF/sl_java.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/graph/BreadthFirstPaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/graph/BreadthFirstPaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/graph/ConnectComponent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/graph/ConnectComponent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/graph/Cycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/graph/Cycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/graph/DepthFirstPaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/graph/DepthFirstPaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/graph/DepthFirstSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/graph/DepthFirstSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/graph/Digraph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/graph/Digraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/graph/DirectedDFS.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/graph/DirectedDFS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/graph/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/graph/TwoColor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/graph/TwoColor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/BST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/BST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/BinarySearchExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/BinarySearchExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/BinarySearchST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/BinarySearchST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/LinearProbingHashST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/LinearProbingHashST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/RedBlackBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/RedBlackBST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/SeparateChainingHashST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/SeparateChainingHashST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/SequentialSearchST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/SequentialSearchST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/searching/SparseVector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/searching/SparseVector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Bubble.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Bubble.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Heap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Heap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Insertion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Insertion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/MergeBU.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/MergeBU.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/MergeUB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/MergeUB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Quick.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Quick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Quick3way.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Quick3way.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Selection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Selection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Shell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Shell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/SortCompare.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/SortCompare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/sorting/Stopwatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/sorting/Stopwatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sl_java/string/LSD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sl_java/string/LSD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/BreadthFirstPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/BreadthFirstPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/ConnectComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/ConnectComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/Cycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Cycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DepthFirstPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/DepthFirstPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DepthFirstSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/DepthFirstSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/Digraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Digraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/DirectedDFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/DirectedDFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/TwoColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/TwoColor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/BinarySearchExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/BinarySearchExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/BinarySearchST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/BinarySearchST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/LinearProbingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/LinearProbingHashST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/RedBlackBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/RedBlackBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/SeparateChainingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/SeparateChainingHashST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/SequentialSearchST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/SequentialSearchST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/searching/SparseVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/searching/SparseVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Bubble.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Bubble.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Heap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Insertion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Insertion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/MaxPQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/MaxPQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/MergeBU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/MergeBU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/MergeUB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/MergeUB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Quick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Quick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Quick3way.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Quick3way.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Selection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Selection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/Shell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/Shell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/SortCompare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/SortCompare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/string/LSD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/string/LSD.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,9 +116,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Digraph">
-    <configuration name="Cycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graph.Cycle" />
+  <component name="RunManager" selected="Application.Quick3string">
+    <configuration name="DirectedCycle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="graph.DirectedCycle" />
       <module name="sl_java" />
       <extension name="coverage">
         <pattern>
@@ -70,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Digraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graph.Digraph" />
+    <configuration name="LSD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string.LSD" />
       <module name="sl_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +143,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DirectedDFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graph.DirectedDFS" />
+    <configuration name="MSD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string.MSD" />
       <module name="sl_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Graph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graph.Graph" />
+    <configuration name="Quick3string" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string.Quick3string" />
       <module name="sl_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,12 +169,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="graph.TwoColor" />
+    <configuration name="SequentialSearchST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="searching.SequentialSearchST" />
       <module name="sl_java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="graph.*" />
+          <option name="PATTERN" value="searching.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Digraph" />
-        <item itemvalue="Application.DirectedDFS" />
-        <item itemvalue="Application.Graph" />
-        <item itemvalue="Application.TwoColor" />
-        <item itemvalue="Application.Cycle" />
+        <item itemvalue="Application.Quick3string" />
+        <item itemvalue="Application.MSD" />
+        <item itemvalue="Application.LSD" />
+        <item itemvalue="Application.DirectedCycle" />
+        <item itemvalue="Application.SequentialSearchST" />
       </list>
     </recent_temporary>
   </component>
@@ -158,6 +218,12 @@
       <workItem from="1601841887944" duration="33000" />
       <workItem from="1601842058125" duration="4859000" />
       <workItem from="1601910151238" duration="5094000" />
+      <workItem from="1601992168941" duration="1982000" />
+      <workItem from="1602069172808" duration="51000" />
+      <workItem from="1606732780316" duration="1744000" />
+      <workItem from="1610141270206" duration="2495000" />
+      <workItem from="1611913764090" duration="2135000" />
+      <workItem from="1612014188765" duration="2732000" />
     </task>
     <servers />
   </component>

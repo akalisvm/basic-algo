@@ -9,23 +9,23 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
     private Key[] keys;
     private Value[] vals;
     private int n;
-    public BinarySearchST(int capacity) {
+    private BinarySearchST(int capacity) {
         keys = (Key[]) new Comparable[capacity];
         vals = (Value[]) new Object[capacity];
     }
 
-    public int size() { return n; }
+    private int size() { return n; }
 
-    public boolean isEmpty() { return size() == 0; }
+    private boolean isEmpty() { return size() == 0; }
 
-    public Value get(Key key) {
+    private Value get(Key key) {
         if(isEmpty()) return null;
         int i = rankIter(key);
         if(i < n && keys[i].compareTo(key) == 0) return vals[i];
         else return null;
     }
 
-    public int rankIter(Key key) {
+    private int rankIter(Key key) {
         int lo = 0, hi = n-1;
         while(lo <= hi) {
             int mid = lo + (hi - lo) / 2;
@@ -41,7 +41,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         return rankRecursion(key, 0, n-1);
     }
 
-    public int rankRecursion(Key key, int lo, int hi) {
+    private int rankRecursion(Key key, int lo, int hi) {
         if(hi < lo) return lo;
         int mid = lo + (hi - lo) / 2;
         int cmp = key.compareTo(keys[mid]);
@@ -50,7 +50,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         else return mid;
     }
 
-    public void put(Key key, Value val) {
+    private void put(Key key, Value val) {
         int i = rankIter(key);
         if(i < n && keys[i].compareTo(key) == 0) {
             vals[i] = val;
@@ -71,7 +71,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         }
     }
 
-    public static String getKey() {
+    private static String getKey() {
         Scanner sc = new Scanner(System.in);
         return sc.next();
     }

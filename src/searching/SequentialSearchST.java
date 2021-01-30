@@ -26,7 +26,7 @@ public class SequentialSearchST<Key, Value> {
         return n;
     }
 
-    public Value get(Key key) {
+    Value get(Key key) {
         for(Node x = first; x != null; x = x.next) {
             if(key.equals(x.key)) {
                 return x.val;
@@ -35,7 +35,7 @@ public class SequentialSearchST<Key, Value> {
         return null;
     }
 
-    public void put(Key key, Value val) {
+    void put(Key key, Value val) {
         for(Node x = first; x != null; x = x.next) {
             if (key.equals(x.key)) {
                 x.val = val;
@@ -45,7 +45,7 @@ public class SequentialSearchST<Key, Value> {
         first = new Node(key, val, first);
     }
 
-    public boolean contains(Key key) {
+    boolean contains(Key key) {
         while(first != null) {
             if(first.key.equals(key)) {
                 return true;
@@ -77,7 +77,7 @@ public class SequentialSearchST<Key, Value> {
         }
     }
 
-    public static String getKey() {
+    private static String getKey() {
         Scanner sc = new Scanner(System.in);
         return sc.next();
     }

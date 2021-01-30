@@ -2,15 +2,15 @@ package sorting;
 
 class Stopwatch {
     private final long start;
-    public Stopwatch() { start = System.currentTimeMillis(); }
-    public double elapsedTime() {
+    Stopwatch() { start = System.currentTimeMillis(); }
+    double elapsedTime() {
         long now = System.currentTimeMillis();
         return (now - start) / 1000.0;
     }
 }
 
 public class SortCompare {
-    public static double time(String alg, Comparable[] a){
+    private static double time(String alg, Comparable[] a) {
         Stopwatch timer = new Stopwatch();
         if (alg.equals("Bubble")) Bubble.sort(a);
         if (alg.equals("Selection")) Selection.sort(a);
@@ -24,7 +24,7 @@ public class SortCompare {
         return timer.elapsedTime();
     }
 
-    public static double timeRandomInput(String alg, int N, int T) {
+    private static double timeRandomInput(String alg, int N, int T) {
         double total = 0.0;
         Comparable[] a = new Comparable[N];
         for(int t = 0; t < T; t++) {

@@ -1,27 +1,29 @@
 package string;
 
 public class LSD {
-    public static void sort(String[] a, int w) {
-        int n = a.length;
-        int r = 256;
-        String[] aux = new String[n];
+    // Sorting strings in an array according the beginning W characters.
+    public static void sort(String[] a, int W) {
+        int N = a.length;
+        int R = 256;
+        String[] aux = new String[N];
 
-        for(int d = w-1; d >= 0; d--) {
+        for(int d = W-1; d >= 0; d--) {
+            // Key-indexed Sorting according the dth character.
 
-            int[] count = new int[r+1];
-            for(int i = 0; i < n; i++) {
+            int[] count = new int[R+1];
+            for(int i = 0; i < N; i++) { // Calculating the frequency to occurrences.
                 count[a[i].charAt(d)+1]++;
             }
 
-            for(int i = 0; i < r; i++) {
+            for(int i = 0; i < R; i++) { // Converting frequency to index.
                 count[i+1] += count[i];
             }
 
-            for(int i = 0; i < n; i++) {
+            for(int i = 0; i < N; i++) { // Classifying the elements.
                 aux[count[a[i].charAt(d)]++] = a[i];
             }
 
-            for(int i = 0; i < n; i++) {
+            for(int i = 0; i < N; i++) { // Writing the elements back.
                 a[i] = aux[i];
             }
         }

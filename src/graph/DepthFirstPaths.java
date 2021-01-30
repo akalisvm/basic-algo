@@ -1,6 +1,7 @@
 package graph;
 
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Stack;
 import java.util.Scanner;
 
@@ -9,7 +10,7 @@ public class DepthFirstPaths {
     private int[] edgeTo; // the last vertex on a known path from a vertex to another vertex
     private final int s; // start vertex
 
-    public DepthFirstPaths(Graph G, int s) {
+    private DepthFirstPaths(Graph G, int s) {
         marked = new boolean[G.V()];
         edgeTo = new int[G.V()];
         this.s = s;
@@ -26,9 +27,9 @@ public class DepthFirstPaths {
         }
     }
 
-    public boolean hasPathTo(int v) { return marked[v]; }
+    private boolean hasPathTo(int v) { return marked[v]; }
 
-    public Iterable<Integer> pathTo(int v) {
+    private Iterable<Integer> pathTo(int v) {
         if(!hasPathTo(v)) return null;
         ArrayList<Integer> temp = new ArrayList<>();
         for(int x = v; x != s; x = edgeTo[x]) {
@@ -44,7 +45,7 @@ public class DepthFirstPaths {
 
     public static void main(String[] args) {
         int[][] tinyCG = new int[][] {
-                {6}, {8}, {0, 5}, {2, 4}, {2, 3}, {1, 2}, {0, 1}, {3, 4}, {3, 5}, {0, 2}
+                {6}, {8}, {0,5}, {2,4}, {2,3}, {1,2}, {0,1}, {3,4}, {3,5}, {0,2}
         };
         Graph G = new Graph(tinyCG);
         System.out.println(G);
@@ -62,7 +63,7 @@ public class DepthFirstPaths {
         for(int v = 0; v < G.V(); v++) {
             System.out.print(s + " to " + v + ": ");
             if(paths.hasPathTo(v)) {
-                for(int x : paths.pathTo(v)) {
+                for(int x : Objects.requireNonNull(paths.pathTo(v))) {
                     if(x == s) {
                         System.out.print(x);
                     }

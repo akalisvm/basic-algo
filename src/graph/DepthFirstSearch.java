@@ -6,7 +6,7 @@ public class DepthFirstSearch {
     private boolean[] marked;
     private int count;
 
-    public DepthFirstSearch(Graph G, int s) {
+    private DepthFirstSearch(Graph G, int s) {
         marked = new boolean[G.V()];
         dfs(G, s);
     }
@@ -21,13 +21,19 @@ public class DepthFirstSearch {
         }
     }
 
-    public boolean marked(int w) { return marked[w]; } // all vertices connect with start vertex
+    private boolean marked(int w) { // all vertices connect with start vertex
+        return marked[w];
+    }
 
-    public int count() { return count; }
+    private int count() {
+        return count;
+    }
 
-    public boolean connected(DepthFirstSearch dfs, Graph G) { return dfs.count() == G.V(); } // whether this graph is connected
+    private boolean connected(DepthFirstSearch dfs, Graph G) { // whether this graph is connected
+        return dfs.count() == G.V();
+    }
 
-    public void markedPrint(DepthFirstSearch dfs, Graph G) {
+    private void markedPrint(DepthFirstSearch dfs, Graph G) {
         for(int v = 0; v < G.V(); v++) {
             if(dfs.marked(v)) {
                 System.out.print(v + " ");
@@ -36,7 +42,7 @@ public class DepthFirstSearch {
         System.out.println();
     }
 
-    public void connectedPrint(DepthFirstSearch dfs, Graph G) {
+    private void connectedPrint(DepthFirstSearch dfs, Graph G) {
         System.out.print("This graph is ");
         if(!dfs.connected(dfs, G))
             System.out.print("NOT ");
@@ -45,11 +51,11 @@ public class DepthFirstSearch {
 
     public static void main(String[] args) {
         int[][] tinyG = new int[][]{
-                {13}, {13}, {0, 5}, {4, 3}, {0, 1}, {9, 12}, {6, 4}, {5, 4},
-                {0, 2}, {11, 12}, {9, 10}, {0, 6}, {7, 8}, {9, 11}, {5, 3}
+                {13}, {13}, {0,5}, {4,3}, {0,1}, {9,12}, {6,4}, {5,4},
+                {0,2}, {11,12}, {9,10}, {0,6}, {7,8}, {9,11}, {5,3}
         };
         int[][] tinyCG = new int[][] {
-                {6}, {8}, {0, 5}, {2, 4}, {2, 3}, {1, 2}, {0, 1}, {3, 4}, {3, 5}, {0, 2}
+                {6}, {8}, {0,5}, {2,4}, {2,3}, {1,2}, {0,1}, {3,4}, {3,5}, {0,2}
         };
         Graph G = new Graph(tinyCG);
         System.out.println(G);

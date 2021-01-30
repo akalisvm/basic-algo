@@ -71,9 +71,9 @@ public class  RedBlackBST<Key extends Comparable<Key>, Value> {
         h.right.color = BLACK;
     }
 
-    public Value get(Key key) { return get(root, key); }
+    private Value get(Key key) { return get(root, key); }
 
-    public Value get(Node x, Key key) {
+    private Value get(Node x, Key key) {
         if(x == null) return null;
         int cmp = key.compareTo(x.key);
         if(cmp < 0) return get(x.left, key);
@@ -81,12 +81,12 @@ public class  RedBlackBST<Key extends Comparable<Key>, Value> {
         else return x.val;
     }
 
-    public void put(Key key, Value val) {
+    private void put(Key key, Value val) {
         root = put(root, key, val);
         root.color = BLACK;
     }
 
-    public Node put(Node h, Key key, Value val) {
+    private Node put(Node h, Key key, Value val) {
         if(h == null) return new Node(key, val, 1, RED);
 
         int cmp = key.compareTo(h.key);
@@ -102,14 +102,14 @@ public class  RedBlackBST<Key extends Comparable<Key>, Value> {
         return h;
     }
 
-    public static String getKey() {
+    private static String getKey() {
         Scanner sc = new Scanner(System.in);
         return sc.next();
     }
 
     // pre order traversal ROOT -> LEFT -> RIGHT
-    public void preOrderTraversal(){ preOrderTraversal(root);}
-    public void preOrderTraversal(Node x) {
+    private void preOrderTraversal(){ preOrderTraversal(root);}
+    private void preOrderTraversal(Node x) {
         if(x == null) return;
         System.out.print(x.key + ": "+ x.val + "\t");
         preOrderTraversal(x.left);
@@ -117,8 +117,8 @@ public class  RedBlackBST<Key extends Comparable<Key>, Value> {
     }
 
     // in order traversal LEFT -> ROOT -> RIGHT
-    public void inOrderTraversal() { inOrderTraversal(root); }
-    public void inOrderTraversal(Node x) {
+    private void inOrderTraversal() { inOrderTraversal(root); }
+    private void inOrderTraversal(Node x) {
         if(x == null) return;
         inOrderTraversal(x.left);
         System.out.print(x.key + ": "+ x.val + "\t");
@@ -126,8 +126,8 @@ public class  RedBlackBST<Key extends Comparable<Key>, Value> {
     }
 
     // post order traversal LEFT -> RIGHT -> ROOT
-    public void postOrderTraversal() { postOrderTraversal(root); }
-    public void postOrderTraversal(Node x) {
+    private void postOrderTraversal() { postOrderTraversal(root); }
+    private void postOrderTraversal(Node x) {
         if(x == null) return;
         postOrderTraversal(x.left);
         postOrderTraversal(x.right);
@@ -135,8 +135,8 @@ public class  RedBlackBST<Key extends Comparable<Key>, Value> {
     }
 
     // level order traversal
-    public void levelOrderTraversal() {levelOrderTraversal(root); }
-    public void levelOrderTraversal(Node x) {
+    private void levelOrderTraversal() {levelOrderTraversal(root); }
+    private void levelOrderTraversal(Node x) {
         LinkedList<Node> queue = new LinkedList<>();
         queue.add(x);
         while(!queue.isEmpty()) {
