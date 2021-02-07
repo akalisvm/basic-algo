@@ -14,9 +14,13 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         vals = (Value[]) new Object[capacity];
     }
 
-    private int size() { return n; }
+    private int size() {
+        return n;
+    }
 
-    private boolean isEmpty() { return size() == 0; }
+    private boolean isEmpty() {
+        return size() == 0;
+    }
 
     private Value get(Key key) {
         if(isEmpty()) return null;

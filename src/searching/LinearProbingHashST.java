@@ -10,7 +10,9 @@ public class LinearProbingHashST<Key, Value> {
     private Key[] keys;
     private Value[] vals;
 
-    private LinearProbingHashST() { this(16); }
+    private LinearProbingHashST() {
+        this(16);
+    }
 
     private LinearProbingHashST(int m) {
         this.m = m;
@@ -18,7 +20,9 @@ public class LinearProbingHashST<Key, Value> {
         vals = (Value[]) new Object[m];
     }
 
-    private int hash(Key key) { return (key.hashCode() & 0x7fffffff) % m; }
+    private int hash(Key key) {
+        return (key.hashCode() & 0x7fffffff) % m;
+    }
 
     private void resize(int capacity) {
         LinearProbingHashST<Key, Value> st = new LinearProbingHashST<>(capacity);

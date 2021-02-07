@@ -19,14 +19,18 @@ public class BST<Key extends Comparable<Key>, Value> {
         }
     }
 
-    public int size() { return size(root); }
+    public int size() {
+        return size(root);
+    }
 
     private int size(Node x) {
         if(x == null) return 0;
         else return x.n;
     }
 
-    private Value get(Key key) { return get(root, key); }
+    private Value get(Key key) {
+        return get(root, key);
+    }
 
     private Value get(Node x, Key key) {
         if(x == null) return null;

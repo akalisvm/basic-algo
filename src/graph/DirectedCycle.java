@@ -8,7 +8,7 @@ public class DirectedCycle {
     private Stack<Integer> cycle;
     private boolean[] onStack;
 
-    private DirectedCycle(Digraph G) {
+    DirectedCycle(Digraph G) {
         onStack = new boolean[G.V()];
         edgeTo = new int[G.V()];
         marked = new boolean[G.V()];
@@ -22,7 +22,9 @@ public class DirectedCycle {
         marked[v] = true;
         for(int w : G.adj(v)) {
             if(this.hasCycle()) return;
-            else if(!marked[w]) { edgeTo[w] = v; dfs(G, w); }
+            else if(!marked[w]) {
+                edgeTo[w] = v; dfs(G, w);
+            }
             else if(onStack[w]) {
                 cycle = new Stack<>();
                 for(int x = v; x != w; x = edgeTo[x]) {
@@ -35,7 +37,7 @@ public class DirectedCycle {
         onStack[v] = false;
     }
 
-    private boolean hasCycle() { return cycle != null; }
+    boolean hasCycle() { return cycle != null; }
 
     private Iterable<Integer> cycle() { return cycle; }
 

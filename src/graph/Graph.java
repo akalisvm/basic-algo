@@ -26,9 +26,13 @@ public class Graph {
         }
     }
 
-    public int V() { return V; }
+    public int V() {
+        return V;
+    }
 
-    public int E() { return E; }
+    public int E() {
+        return E;
+    }
 
     private void addEdge(int v, int w) {
         adj[v].add(w); // add w to the linked list of v
@@ -78,7 +82,7 @@ public class Graph {
         return String.valueOf(s);
     }
 
-    public static void graphPrint(int[][] graph) {
+    private static void graphPrint(int[][] graph) {
         Graph G = new Graph(graph);
         System.out.print(G);
         System.out.println("The largest degree is: " + maxDegree(G));

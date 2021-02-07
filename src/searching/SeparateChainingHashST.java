@@ -9,7 +9,9 @@ public class SeparateChainingHashST<Key, Value> {
     private int m;
     private SequentialSearchST<Key, Value>[] st;
 
-    public SeparateChainingHashST() { this(997); } // default set
+    public SeparateChainingHashST() { // default set
+        this(997);
+    }
 
     private SeparateChainingHashST(int m) {
         this.m = m;
@@ -19,11 +21,17 @@ public class SeparateChainingHashST<Key, Value> {
         }
     }
 
-    private int hash(Key key) { return (key.hashCode() & 0x7fffffff) % m; }
+    private int hash(Key key) {
+        return (key.hashCode() & 0x7fffffff) % m;
+    }
 
-    private void put(Key key, Value val) { st[hash(key)].put(key, val); }
+    private void put(Key key, Value val) {
+        st[hash(key)].put(key, val);
+    }
 
-    private Value get(Key key) { return st[hash(key)].get(key); }
+    private Value get(Key key) {
+        return st[hash(key)].get(key);
+    }
 
     private static String getKey() {
         Scanner sc = new Scanner(System.in);

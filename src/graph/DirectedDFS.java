@@ -26,7 +26,9 @@ public class DirectedDFS {
         }
     }
 
-    private boolean marked(int v) { return marked[v]; }
+    private boolean marked(int v) {
+        return marked[v];
+    }
 
     public static void main(String[] args) {
         int[][] tinyDG = new int[][]{
