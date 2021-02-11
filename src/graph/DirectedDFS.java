@@ -12,7 +12,7 @@ public class DirectedDFS {
         dfs(G,s);
     }
 
-    private DirectedDFS(Digraph G, Iterable<Integer> sources) {
+    public DirectedDFS(Digraph G, Iterable<Integer> sources) {
         marked = new boolean[G.V()];
         for(int s : sources) {
             if(!marked[s]) dfs(G, s);
@@ -26,7 +26,7 @@ public class DirectedDFS {
         }
     }
 
-    private boolean marked(int v) {
+    public boolean marked(int v) {
         return marked[v];
     }
 

@@ -7,7 +7,7 @@ public class Digraph {
     private int E;
     private LinkedList<Integer>[] adj;
 
-    private Digraph(int V) {
+    public Digraph(int V) {
         this.V = V;
         this.E = 0;
         adj = (LinkedList<Integer>[]) new LinkedList[V];
@@ -30,14 +30,14 @@ public class Digraph {
 
     public int E() { return E; }
 
-    private void addEdge(int v, int w) {
+    public void addEdge(int v, int w) {
         adj[v].add(w);
         E++;
     }
 
     public Iterable<Integer> adj(int v) { return adj[v]; }
 
-    public Digraph reverse() {
+    Digraph reverse() {
         Digraph R = new Digraph(V);
         for(int v = 0; v < V; v++) {
             for(int w : adj(v)) {

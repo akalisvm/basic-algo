@@ -1,5 +1,7 @@
 package string;
 
+import java.util.Random;
+
 public class RabinKarp {
     private long patHash;
     private int M;
@@ -9,7 +11,7 @@ public class RabinKarp {
 
     private RabinKarp(String pat) {
         this.M = pat.length();
-        Q = 1111111111; // a random long type prime number
+        Q = longRandomPrime(); // a random long type prime number
         RM = 1;
         for(int i = 1; i <= M-1; i++) {
             RM = (R * RM) % Q;
@@ -43,6 +45,31 @@ public class RabinKarp {
             }
         }
         return N;
+    }
+
+    private long longRandomPrime() {
+        int max= 0, min;
+        Random num = new Random();
+
+        for(int i = 0; i < 31; i++) {
+            max += (long) Math.pow(2, i);
+        }
+        min = (int) Math.pow(2, 30);
+
+        long randomNum = num.nextInt(max-min+1) + min;
+        if(isPrime(randomNum)) {
+            return randomNum;
+        }
+        return longRandomPrime();
+    }
+
+    private static boolean isPrime(long num) {
+        for(int i = 2; i < num; i++) {
+            if(num % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static void main(String[] args) {
